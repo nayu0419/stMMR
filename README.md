@@ -7,19 +7,24 @@
 ![](https://github.com/nayu0419/stMMR/blob/main/overview.png)
 
 ## requirements
-- MATLAB R2020a
+numpy~=1.21.5
+numba~=0.55.1
+scanpy~=1.9.3
+torch~=1.11.0
+munkres~=1.1.4
+pandas~=1.3.5
+scikit-learn~=1.0.2
+anndata~=0.8.0
+scipy~=1.7.3
+matplotlib~=3.5.2
 
 ## run
 
 ```
-ETHLR_main.m
+'python run_Breast_Cancer.py'
 ```
 
-## File:
+## Contact
+Feel free to submit an issue or contact us at gaorui@sdu.edu.cn for problems about the packages.
 
-- funs: subfunction used in the ETHLR process
-- Datasets: the pan-cancer omics data (for example, PAAD_CHOL_ESCA)
-- The original dataset can be downloaded in [TCGA] (https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga)
-- Put the other datasets in the folder "Datasets"
 
-where *dataset* contains three categories of information, namely gene expression (GE), copy number variation (CNV) and methylation (ME). We represent a pan-cancer omics dataset as a third-order tensor.
