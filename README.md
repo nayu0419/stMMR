@@ -34,6 +34,24 @@ anndata~=0.8.0
 scipy~=1.7.3
 matplotlib~=3.5.2
 
+## Datasets
+All datasets used in our paper can be found in:
+
+* DPLFC: 
+The primary source: https://github.com/LieberInstitute/spatialLIBD; 
+The processed version: https://www.nature.com/articles/s41593-020-00787-0.
+
+* Human breast cancer: 
+The primary source: https://www.10xgenomics.com/resources/datasets/human-breast-cancer-block-a-section-1-1-standard-1-1-0; 
+The processed version: https://github.com/JinmiaoChenLab/SEDR_analyses/.
+
+* Chicken heart
+The primary source: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149457;
+
+* Lung cancer (9-1) nanostring
+The primary source: https://nanostring.com/products/cosmx-spatial-molecular-imager/nsclc-ffpe-dataset;
+
+
 ## run
 
 ```
