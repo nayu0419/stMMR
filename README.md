@@ -22,7 +22,7 @@ pip3 install stMMR
 ```
 
 
-## requirements
+## Requirements
 * numpy~=1.21.5
 * numba~=0.55.1
 * scanpy~=1.9.3
@@ -60,7 +60,7 @@ The primary source: https://www.10xgenomics.com/resources/datasets/mouse-brain-s
 
 
 
-## run
+## Example usage
 
 ```
 'python run_Breast_Cancer.py'
