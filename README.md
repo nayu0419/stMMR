@@ -6,6 +6,20 @@
 
 ![](https://github.com/nayu0419/stMMR/blob/main/overview.png)
 
+## Installation
+
+Clone this repository. The stMMR has been implemented in Python3.9.1 and Pytorch 1.11.1.
+### Github
+```
+git@github.com:nayu0419/stMMR.git
+cd stMMR
+python setup.py build
+python setup.py install --user
+```
+### PyPI: Directly install the package from PyPI
+pip3 install stMMR
+#Note: you need to make sure that the pip is for python3.
+
 ## requirements
 numpy~=1.21.5
 numba~=0.55.1
