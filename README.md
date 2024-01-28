@@ -51,6 +51,14 @@ The primary source: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149457
 * Lung cancer (9-1) nanostring
 The primary source: https://nanostring.com/products/cosmx-spatial-molecular-imager/nsclc-ffpe-dataset;
 
+* Human pancreatic ductal adenocarcinoma
+The primary source: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3036911;
+
+* Mouse anterior brain
+The primary source: https://www.10xgenomics.com/resources/datasets/mouse-brain-serial-section-1-sagittal-anterior-1-standard-1-1-0;
+
+
+
 
 ## run
 
