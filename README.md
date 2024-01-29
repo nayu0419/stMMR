@@ -72,47 +72,35 @@ The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-
 
 ### 4.1 parameters of stMMR
 
-    adata
-        AnnData object of scanpy package.
-    knn
-        Number of clusters(If the clustering method is kmeans, this parameter is required).
-    hidden_dims
-        The dimension of the encoder.
-    n_epochs
-        Number of total epochs in training.
-    lr
-        Learning rate for AdamOptimizer.
-    key_added
-        The clustering results are saved in adata.obs[key_added].
-    random_seed
-        Random seed.
-    gradient_clipping
-        Gradient Clipping.
-    res
-        Clustering resolution(If the clustering method is leiden, this parameter is required).
-    weight_decay
-        Weight decay for AdamOptimizer.
-    a
-        The weight of ZINB loss. 
-    b
-        The weight of contrastive loss 
-    c
-        The weight of regularization loss
-    enhancement
-        Whether to save the enhanced genes.
-    embed
-	    If true, stMMR will reduce the latent feature dimension via PCA and save it in adata.obsm['emb_pca'].
-    cluster
-        Clustering method
-    loss_type
-        Contrast loss or consistency loss.
-    radius
-        Refine the predicted labels by how many neighbor spots.
-    device
-        See torch.device.
-    -----------------------------------
-    Returns
-    AnnData
+    **--knn**: The number of clusters (This parameter is mandatory if the clustering method is k-means).
+    
+    **--hidden_dims**: The dimension of the encoder.
+	
+    **--n_epochs**: The number of training epochs.
+    
+    **--lr**: The learning rate for AdamOptimizer.
+    
+    **--random_seed**: the random parameter.
+    
+    **--res**: Clustering resolution (If the clustering method is leiden, this parameter is required).
+	
+    **--weight_decay**: The weight decay for AdamOptimizer.
+    
+    **--a**: The value of hyperparameter a for ZINB loss. 
+    
+    **--b**: The value of hyperparameter b for contrastive loss.
+    
+    **--c**: The value of hyperparameter c for regularization loss.
+    
+    **--cluster**: The tool for clustering. Supported tools include 'k-means' and 'leiden'. The default is 'k-means'.
+        
+    **--loss_type**: Type of loss function. Supported types include: 'contrastive loss' and 'consistency loss'. The default is 'consistency loss'.
+	
+    **--radius**：the spatial location radius.
+      
+    **--device**： See torch.device.
+    
+    **--dropout**: the dropout rate.
 
 
 ### 4.2 Example: Analyzing Human Breast Cancer ST data with stMMR
