@@ -92,15 +92,14 @@ The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-
     
    * **--c**: The value of hyperparameter c for regularization loss.
     
-   * **--cluster**: The tool for clustering. Supported tools include 'k-means' and 'leiden'. The default is 'k-means'.
+   * **--cluster**: The tool for clustering. Supported tools include 'kmeans' and 'leiden'. The default is 'kmeans'.
         
-   * **--loss_type**: Type of loss function. Supported types include: 'contrastive loss' and 'consistency loss'. The default is 'consistency loss'.
+   * **--loss_type**: Type of loss function. Supported types include: 'contrastive_loss' and 'consistency_loss'. The default is 'consistency_loss'.
 	
    * **--radius**：the spatial location radius.
       
    * **--device**： See torch.device.
     
-   * **--dropout**: the dropout rate.
 
 
 ### 4.2 Example: Analyzing Human Breast Cancer ST data with stMMR
