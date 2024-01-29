@@ -94,7 +94,7 @@ The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-
     
    * **--cluster**: The tool for clustering. Supported tools include 'kmeans' and 'leiden'. The default is 'kmeans'.
         
-   * **--loss_type**: Type of loss function. Supported types include: 'contrastive_loss' and 'consistency_loss'. The default is 'consistency_loss'.
+   * **--loss_type**: Type of loss function. Supported types include: 'contrastive' and 'consistency' loss.
 	
    * **--radius**：the spatial location radius.
       
