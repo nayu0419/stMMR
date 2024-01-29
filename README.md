@@ -74,33 +74,33 @@ The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-
 
    * **--knn**: The number of clusters (This parameter is mandatory if the clustering method is k-means).
     
-    **--hidden_dims**: The dimension of the encoder.
+   * **--hidden_dims**: The dimension of the encoder.
 	
-    **--n_epochs**: The number of training epochs.
+   * **--n_epochs**: The number of training epochs.
     
-    **--lr**: The learning rate for AdamOptimizer.
+   * **--lr**: The learning rate for AdamOptimizer.
     
-    **--random_seed**: the random parameter.
+   * **--random_seed**: the random parameter.
     
-    **--res**: Clustering resolution (If the clustering method is leiden, this parameter is required).
+   * **--res**: Clustering resolution (If the clustering method is leiden, this parameter is required).
 	
-    **--weight_decay**: The weight decay for AdamOptimizer.
+   * **--weight_decay**: The weight decay for AdamOptimizer.
     
-    **--a**: The value of hyperparameter a for ZINB loss. 
+   * **--a**: The value of hyperparameter a for ZINB loss. 
     
-    **--b**: The value of hyperparameter b for contrastive loss.
+   * **--b**: The value of hyperparameter b for contrastive loss.
     
-    **--c**: The value of hyperparameter c for regularization loss.
+   * **--c**: The value of hyperparameter c for regularization loss.
     
-    **--cluster**: The tool for clustering. Supported tools include 'k-means' and 'leiden'. The default is 'k-means'.
+   * **--cluster**: The tool for clustering. Supported tools include 'k-means' and 'leiden'. The default is 'k-means'.
         
-    **--loss_type**: Type of loss function. Supported types include: 'contrastive loss' and 'consistency loss'. The default is 'consistency loss'.
+   * **--loss_type**: Type of loss function. Supported types include: 'contrastive loss' and 'consistency loss'. The default is 'consistency loss'.
 	
-    **--radius**：the spatial location radius.
+   * **--radius**：the spatial location radius.
       
-    **--device**： See torch.device.
+   * **--device**： See torch.device.
     
-    **--dropout**: the dropout rate.
+   * **--dropout**: the dropout rate.
 
 
 ### 4.2 Example: Analyzing Human Breast Cancer ST data with stMMR
