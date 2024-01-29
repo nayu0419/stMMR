@@ -58,13 +58,12 @@ The primary source: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM303691
 The primary source: https://www.10xgenomics.com/resources/datasets/mouse-brain-serial-section-1-sagittal-anterior-1-standard-1-1-0;
 
 
-
-
 ## Example usage
 
 ```
 python run_Breast_Cancer.py
 ```
+Note: We used ViT model to extract the latent representation of each spot image. Here we take the Human breast cancer dataset as example. The histology image is available at https://www.10xgenomics.com/resources/datasets/human-breast-cancer-block-a-section-1-1-standard-1-1-0. To reduce your waiting time, we upload obtained histological image representation data to https://drive.google.com/drive/folders/12udlvJ_VyvU5l3mJOOuHO5VOkCqwWaRI.
 
 ## Contact
 Feel free to submit an issue or contact us at gaorui@sdu.edu.cn for problems about the packages.
