@@ -100,8 +100,8 @@ The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-
         Contrast loss or consistency loss.
     device
         See torch.device.
+    -----------------------------------
     Returns
-    -------
     AnnData
 
 
