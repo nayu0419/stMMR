@@ -184,8 +184,7 @@ Configure the parameters for stMMR.
 
 ```Python
 adata = train_model.train(adata, k, n_epochs=50, h=[3000, 3000], radius=50, l=0.63, lr=0.0000005)
-# 13 epoch=14
-#
+
 obs_df = adata.obs.dropna()
 # obs_df.to_csv("result/{}_type_stMMR.csv".format(section_id))
 ARI = adjusted_rand_score(obs_df["stMMR"], obs_df["Ground Truth"])
