@@ -72,7 +72,38 @@ The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-
 
 ### 4.1 parameters of stMMR
 
-add parameters here...
+    adata
+        AnnData object of scanpy package.
+    knn
+        Number of clusters(If the clustering method is kmeans, this parameter is required).
+    hidden_dims
+        The dimension of the encoder.
+    n_epochs
+        Number of total epochs in training.
+    lr
+        Learning rate for AdamOptimizer.
+    key_added
+        The clustering results are saved in adata.obs[key_added].
+    random_seed
+        Random seed.
+    gradient_clipping
+        Gradient Clipping.
+    res
+        Clustering resolution(If the clustering method is leiden, this parameter is required).
+    weight_decay
+        Weight decay for AdamOptimizer.
+    enhancement
+        Whether to save the enhanced genes.
+    cluster
+        Clustering method
+    loss_type
+        Contrast loss or consistency loss.
+    device
+        See torch.device.
+    Returns
+    -------
+    AnnData
+
 
 ### 4.2 Example: Analyzing Human Breast Cancer ST data with stMMR
 
