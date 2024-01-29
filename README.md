@@ -31,8 +31,8 @@ python setup.py install --user
 pip3 install stMMR
 ```
 
-
 ### 2.3 Requirements
+
 * numpy~=1.21.5
 * numba~=0.55.1
 * scanpy~=1.9.3
@@ -45,28 +45,28 @@ pip3 install stMMR
 * matplotlib~=3.5.2
 
 ## 3 Datasets
+
 All datasets used in this paper are publicly available. Users can download them from the links below.
 
 * **DPLFC**  
-The primary source: https://github.com/LieberInstitute/spatialLIBD.  
-The processed version: https://www.nature.com/articles/s41593-020-00787-0.
+The primary source: <https://github.com/LieberInstitute/spatialLIBD>.  
+The processed version: <https://www.nature.com/articles/s41593-020-00787-0>.
 
 * **Human breast cancer**  
-The primary source: https://www.10xgenomics.com/resources/datasets/human-breast-cancer-block-a-section-1-1-standard-1-1-0.  
-The processed version: https://github.com/JinmiaoChenLab/SEDR_analyses/.
+The primary source: <https://www.10xgenomics.com/resources/datasets/human-breast-cancer-block-a-section-1-1-standard-1-1-0>.  
+The processed version: <https://github.com/JinmiaoChenLab/SEDR_analyses/>.
 
 * **Chicken heart**  
-The primary source: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149457.
+The primary source: <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149457>.
 
 * **Lung cancer (9-1) nanostring**  
-The primary source: https://nanostring.com/products/cosmx-spatial-molecular-imager/nsclc-ffpe-dataset.
+The primary source: <https://nanostring.com/products/cosmx-spatial-molecular-imager/nsclc-ffpe-dataset>.
 
 * **Human pancreatic ductal adenocarcinoma**  
-The primary source: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3036911.
+The primary source: <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3036911>.
 
 * **Mouse anterior brain**  
-The primary source: https://www.10xgenomics.com/resources/datasets/mouse-brain-serial-section-1-sagittal-anterior-1-standard-1-1-0.
-
+The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-serial-section-1-sagittal-anterior-1-standard-1-1-0>.
 
 ## 4 Parameters and Tutorial
 
@@ -79,6 +79,7 @@ add parameters here...
 For the sake of reproducibility, we provide here the analysis code for the human breast cancer dataset used in the main text.
 
 First, load the required packages and data.
+
 ```Python
 import os
 import csv
@@ -111,7 +112,7 @@ adata = sc.read_visium(
 )
 ```
 
-Next, we proceed to preprocess the raw data. This involves ensuring the uniqueness of gene names and filtering out genes that exhibit minimal expression across cells. Subsequently, we identify and retain genes that are highly variable. The data is then subjected to normalization and logarithmic transformation. The adjacent matrix is caulculated.
+Next, we preprocess the raw data. This involves ensuring the uniqueness of gene names and filtering out genes that exhibit minimal expression across cells. Subsequently, we identify and retain genes that are highly variable. The data is then subjected to normalization and logarithmic transformation. The adjacent matrix is caulculated.
 
 ```Python
 
@@ -125,7 +126,7 @@ adata.obsm["im_re"] = im_re
 
 Ann_df = pd.read_csv(
     "Data/V1_Breast_Cancer_Block_A_Section_1/metadata.tsv",
-    sep="	",
+    sep=" ",
     header=0,
     na_filter=False,
     index_col=0,
@@ -141,8 +142,7 @@ adata.obsm["adj"] = calculate_adj_matrix(adata)
 Configure the parameters for stMMR.
 
 ```Python
-adata = train_model.train(adata, k, n_epochs=50, h=[
-                          3000, 3000], radius=50, l=0.63, lr=0.0000005)
+adata = train_model.train(adata, k, n_epochs=50, h=[3000, 3000], radius=50, l=0.63, lr=0.0000005)
 # 13 epoch=14
 #
 obs_df = adata.obs.dropna()
@@ -161,13 +161,9 @@ sc.pl.spatial(
 
 ```
 
-
-**Note**: 
-In our study, we employed the Vision Transformer (ViT) model to extract the latent representations of each spot image. As a case study, we utilized the Human Breast Cancer dataset. The corresponding histology image can be accessed at the provided link: https://www.10xgenomics.com/resources/datasets/human-breast-cancer-block-a-section-1-1-standard-1-1-0. To minimize waiting time, we have uploaded the processed histological image representation data to the following Google Drive link: https://drive.google.com/drive/folders/12udlvJ_VyvU5l3mJOOuHO5VOkCqwWaRI.
-
+**Note**:  
+In our study, we employed the Vision Transformer (ViT) model to extract the latent representations of each spot image. As a case study, we utilized the Human Breast Cancer dataset. The corresponding histology image can be accessed at the provided link: <https://www.10xgenomics.com/resources/datasets/human-breast-cancer-block-a-section-1-1-standard-1-1-0>. To minimize waiting time, we have uploaded the processed histological image representation data to the following Google Drive link: <https://drive.google.com/drive/folders/12udlvJ_VyvU5l3mJOOuHO5VOkCqwWaRI>.
 
 ## Contact
 
-For any issues regarding the packages, please do not hesitate to submit an issue or contact us at gaorui@sdu.edu.cn and zw@sdu.edu.cn.
-
-
+For any issues regarding the packages, please do not hesitate to submit an issue or contact us at <gaorui@sdu.edu.cn> and <zw@sdu.edu.cn>.
