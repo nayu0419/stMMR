@@ -162,7 +162,7 @@ sc.pl.spatial(
 ```
 
 **Note**:  
-In our study, we employed the Vision Transformer (ViT) model to extract the latent representations of each spot image. As a case study, we utilized the Human Breast Cancer dataset. The corresponding histology image can be accessed at the provided link: <https://www.10xgenomics.com/resources/datasets/human-breast-cancer-block-a-section-1-1-standard-1-1-0>. To minimize waiting time, we have uploaded the processed histological image representation data to the following Google Drive link: <https://drive.google.com/drive/folders/12udlvJ_VyvU5l3mJOOuHO5VOkCqwWaRI>.
+In our study, we employed the [Vision Transformer (ViT)](https://github.com/google-research/vision_transformer) model to extract the latent representations of each spot image. As a case study, we utilized the Human Breast Cancer dataset. The corresponding histology image can be accessed at the provided link: <https://www.10xgenomics.com/resources/datasets/human-breast-cancer-block-a-section-1-1-standard-1-1-0>. To minimize waiting time, we have uploaded the processed histological image representation data to the following Google Drive link: <https://drive.google.com/drive/folders/12udlvJ_VyvU5l3mJOOuHO5VOkCqwWaRI>.
 
 ## Contact
 
