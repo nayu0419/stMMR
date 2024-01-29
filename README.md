@@ -47,11 +47,11 @@ pip3 install stMMR
 ## Datasets
 All datasets used in this paper are publicly available. Users can download them from the links below.
 
-* **DPLFC**: 
+* **DPLFC**:  
 The primary source: https://github.com/LieberInstitute/spatialLIBD; 
 The processed version: https://www.nature.com/articles/s41593-020-00787-0.
 
-* **Human breast cancer**: 
+* **Human breast cancer**:  
 The primary source: https://www.10xgenomics.com/resources/datasets/human-breast-cancer-block-a-section-1-1-standard-1-1-0; 
 The processed version: https://github.com/JinmiaoChenLab/SEDR_analyses/.
 
