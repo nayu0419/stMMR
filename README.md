@@ -16,7 +16,7 @@ stMMR is implemented using Python 3.9.1 and Pytorch 1.11.1.
 
 Users can install stMMR through this repository directly or PyPI.
 
-### 2.1 Github
+### 2.1 Install from Github
 
 ```
 git clone https://github.com/nayu0419/stMMR.git
@@ -25,7 +25,7 @@ python setup.py build
 python setup.py install --user
 ```
 
-### 2.2 PyPI: Directly install the package from PyPI
+### 2.2 Install from PyPI
 
 ```
 pip3 install stMMR
