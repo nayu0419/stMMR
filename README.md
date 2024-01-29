@@ -1,6 +1,6 @@
 # stMMR: Multi-Modal Feature Representation in Spatial Transcriptomics with Similarity Contrastive Learning
 
-## Introduction
+## 1 Introduction
 
 stMMR is a multimodal feature representation approach based on similarity contrastive learning, specifically designed for spatial transcriptomics. stMMR can effectively integrates gene expression, spatial location, and histological imaging information.
 
@@ -10,13 +10,13 @@ The flowchart of stMMR is shown in the following diagram.
 
 ![](./overview.png)
 
-## Installation
+## 2 Installation
 
 stMMR is implemented using Python 3.9.1 and Pytorch 1.11.1.
 
 Users can install stMMR through this repository directly or PyPI.
 
-### Github
+### 2.1 Github
 
 ```
 git clone https://github.com/nayu0419/stMMR.git
@@ -25,14 +25,14 @@ python setup.py build
 python setup.py install --user
 ```
 
-### PyPI: Directly install the package from PyPI
+### 2.2 PyPI: Directly install the package from PyPI
 
 ```
 pip3 install stMMR
 ```
 
 
-## Requirements
+### 2.3 Requirements
 * numpy~=1.21.5
 * numba~=0.55.1
 * scanpy~=1.9.3
@@ -44,7 +44,7 @@ pip3 install stMMR
 * scipy~=1.7.3
 * matplotlib~=3.5.2
 
-## Datasets
+## 3 Datasets
 All datasets used in this paper are publicly available. Users can download them from the links below.
 
 * **DPLFC**  
@@ -68,13 +68,13 @@ The primary source: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM303691
 The primary source: https://www.10xgenomics.com/resources/datasets/mouse-brain-serial-section-1-sagittal-anterior-1-standard-1-1-0.
 
 
-## Parameters and Tutorial
+## 4 Parameters and Tutorial
 
-## parameters of stMMR
+### 4.1 parameters of stMMR
 
 add parameters here...
 
-### Example: Analyzing Human Breast Cancer ST data with stMMR
+### 4.2 Example: Analyzing Human Breast Cancer ST data with stMMR
 
 For the sake of reproducibility, we provide here the analysis code for the human breast cancer dataset used in the main text.
 
