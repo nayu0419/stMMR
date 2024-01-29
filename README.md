@@ -92,12 +92,22 @@ The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-
         Clustering resolution(If the clustering method is leiden, this parameter is required).
     weight_decay
         Weight decay for AdamOptimizer.
+    a
+        The weight of ZINB loss. 
+    b
+        The weight of contrastive loss 
+    c
+        The weight of regularization loss
     enhancement
         Whether to save the enhanced genes.
+    embed
+	    If true, stMMR will reduce the latent feature dimension via PCA and save it in adata.obsm['emb_pca'].
     cluster
         Clustering method
     loss_type
         Contrast loss or consistency loss.
+    radius
+        Refine the predicted labels by how many neighbor spots.
     device
         See torch.device.
     -----------------------------------
