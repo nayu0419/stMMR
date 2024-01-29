@@ -72,7 +72,7 @@ The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-
 
 ### 4.1 parameters of stMMR
 
-    **--knn**: The number of clusters (This parameter is mandatory if the clustering method is k-means).
+   * **--knn**: The number of clusters (This parameter is mandatory if the clustering method is k-means).
     
     **--hidden_dims**: The dimension of the encoder.
 	
