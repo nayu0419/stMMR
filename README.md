@@ -193,4 +193,4 @@ In our study, we employed the [Vision Transformer (ViT)](https://github.com/goog
 
 ## Contact
 
-For any issues regarding the packages, please do not hesitate to submit an issue or contact us at <gaorui@sdu.edu.cn> and <zw@sdu.edu.cn>.
+For any issues regarding the packages, please do not hesitate to submit an issue or contact us at <gaorui@sdu.edu.cn> , <zw@sdu.edu.cn> and <zhiyuan@fudan.edu.cn>.
