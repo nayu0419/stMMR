@@ -1,4 +1,4 @@
-# stMMR: Multi-Modal Feature Representation in Spatial Transcriptomics with Similarity Contrastive Learning
+# stMMR: accurate and robust spatial domain identification from spatially resolved transcriptomics with multi-modal feature representation
 
 ## 1 Introduction
 
