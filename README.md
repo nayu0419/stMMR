@@ -160,7 +160,6 @@ Ann_df = pd.read_csv(
     index_col=0,
 )
 adata.obs["Ground Truth"] = Ann_df.loc[adata.obs_names, "fine_annot_type"]
-adata.obs["ground_truth"] = adata.obs["Ground Truth"]
 adata = adata[:, adata.var["highly_variable"]]
 
 adata.obsm["adj"] = calculate_adj_matrix(adata)
