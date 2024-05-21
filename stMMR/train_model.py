@@ -3,7 +3,7 @@ from sklearn import metrics
 from sklearn.cluster import KMeans
 from stMMR.process import *
 from stMMR import models
-import numpy as np
+import datetime
 import torch.optim as optim
 from stMMR.utils import *
 import warnings
@@ -51,7 +51,9 @@ def train(adata,knn=10,h=[3000,3000], n_epochs=200,lr=0.0001, key_added='stMMR',
         total_loss = a * zinb_loss + b * cl_loss + c * reg_loss
         total_loss.backward()
         optimizer.step()
-        print("epoch:",epoch,"loss:",total_loss.item())
+        if epoch % 5 == 0:
+            current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            print(f"[{current_time}] Epoch: {epoch}/{n_epochs}, Loss: {total_loss:.4f}")
 
         if 'ground_truth' in adata.obs.columns:
             if cluster == "kmeans":
@@ -60,7 +62,6 @@ def train(adata,knn=10,h=[3000,3000], n_epochs=200,lr=0.0001, key_added='stMMR',
                 adata_Vars.obs['temp']=idx
                 obs_df = adata_Vars.obs.dropna()
                 ari_res = metrics.adjusted_rand_score(obs_df['temp'], obs_df['ground_truth'])
-                print(ari_res)
             else:
                 adata_Vars.obsm["letemp"]=z_xi.to('cpu').detach().numpy()
                 sc.pp.neighbors(adata_Vars, use_rep='letemp')
@@ -70,13 +71,12 @@ def train(adata,knn=10,h=[3000,3000], n_epochs=200,lr=0.0001, key_added='stMMR',
                 idx=adata_Vars.obs['temp'].values
                 count_unique_leiden = len(pd.DataFrame(adata_Vars.obs['temp']).temp.unique())
                 print("num of cluster:",count_unique_leiden)
-                print(epoch,ari_res )
             if ari_res > ari_max:
                 ari_max = ari_res
                 idx_max = idx
                 mean_max = mean.to('cpu').detach().numpy()
                 emb_max = z_xi.to('cpu').detach().numpy()
-                print(epoch,ari_res)
+
     if 'ground_truth' in adata.obs.columns:
         print("Ari=", ari_max)
     else:
