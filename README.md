@@ -1,4 +1,5 @@
 # stMMR: accurate and robust spatial domain identification from spatially resolved transcriptomics with multi-modal feature representation
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11231758.svg)](https://zenodo.org/record/11231758)
 
 ## 1 Introduction
 
