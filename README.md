@@ -68,6 +68,15 @@ The primary source: <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM30369
 * **Mouse anterior brain**  
 The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-serial-section-1-sagittal-anterior-1-standard-1-1-0>.
 
+Processed datasets are also available at SODB and can be loaded by PySODB.
+Install PySODB:
+Keep the binary conda environment active and execute:
+```bash
+git clone https://github.com/TencentAILabHealthcare/pysodb.git
+cd pysodb/
+python setup.py install
+```
+
 ## 4 Parameters and Tutorial
 
 ### 4.1 parameters of stMMR
