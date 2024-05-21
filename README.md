@@ -68,15 +68,36 @@ The primary source: <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM30369
 * **Mouse anterior brain**  
 The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-serial-section-1-sagittal-anterior-1-standard-1-1-0>.
 
-Processed datasets are also available at SODB and can be loaded by PySODB.
+Processed datasets are also available at SODB and can be loaded by PySODB. Here, we use DLPFC dataset as an example.
 
-**Install PySODB:**
+**Step1: Install PySODB**
 
 ```bash
 git clone https://github.com/TencentAILabHealthcare/pysodb.git
 cd pysodb/
 python setup.py install
 ```
+
+**Step2: Download DLPFC Dataset**
+
+```Python
+import pysodb
+
+# Initialization
+sodb = pysodb.SODB()
+
+# load whole dataset
+adataset = sodb.load_dataset('maynard2021trans')
+
+# load a specific experiment
+adata = sodb.load_experiment('maynard2021trans','151507')
+```
+
+Then, users can input the SRT data into stMMR.
+
+**Note**:
+It is important to note that if users utilize PySODB to download pre-processed spatial transcriptomic data, they will still need to download the original imaging data from the above links. The data downloaded via PySODB command-line interface consists of compressed images. However, we recommend utilizing the original imaging data for optimal results.To facilitate the reproducibility of stMMR results, we have compiled all datasets utilized in this paper and uploaded them to [Google Cloud]<https://drive.google.com/file/d/1eu9LlvQ3ePkCEpCH-myc09QnfRSgTi5j/view?usp=sharing>. In addition, we employed the [Vision Transformer (ViT)](https://github.com/google-research/vision_transformer) model to extract the latent representations of each spot image. To facilitate user convenience, the processed histological image representation are also provided through [Google Cloud]<https://drive.google.com/file/d/1eu9LlvQ3ePkCEpCH-myc09QnfRSgTi5j/view?usp=sharing>.
+
 
 ## 4 Parameters and Tutorial
 
@@ -235,12 +256,6 @@ sc.pl.spatial(
   python run_Breast_Cancer.py
   ```
 
-
-
-
-
-**Note**:  
-All datasets are publicly available. For convenience, please download the input data before running the model through <https://drive.google.com/file/d/1eu9LlvQ3ePkCEpCH-myc09QnfRSgTi5j/view?usp=sharing>. In our study, we employed the [Vision Transformer (ViT)](https://github.com/google-research/vision_transformer) model to extract the latent representations of each spot image. To minimize waiting time, we have uploaded the processed histological image representation data to the following Google Drive link: <https://drive.google.com/file/d/1eu9LlvQ3ePkCEpCH-myc09QnfRSgTi5j/view?usp=sharing>.
 
 ## Contact
 
