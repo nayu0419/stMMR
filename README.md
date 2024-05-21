@@ -70,7 +70,7 @@ The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-
 
 Processed datasets are also available at SODB and can be loaded by PySODB.
 
-Install PySODB:
+**Install PySODB:**
 
 ```bash
 git clone https://github.com/TencentAILabHealthcare/pysodb.git
