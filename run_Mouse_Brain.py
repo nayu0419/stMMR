@@ -35,7 +35,7 @@ adata =  adata[:, adata.var['highly_variable']]
 
 adata.obsm["adj"] = calculate_adj_matrix(adata)
 
-adata= train_model.train(adata,k,n_epochs=50,h=[3000,3000],radius=0,l=1,embed=False)
+adata= train_model.train(adata,k,n_epochs=200,h=[3000,3000],radius=0,l=1,embed=False)
 obs_df = adata.obs.dropna()
 
 ARI = adjusted_rand_score(obs_df['stMMR'], obs_df['Ground Truth'])
