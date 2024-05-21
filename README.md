@@ -240,7 +240,7 @@ sc.pl.spatial(
 
 
 **Note**:  
-In our study, we employed the [Vision Transformer (ViT)](https://github.com/google-research/vision_transformer) model to extract the latent representations of each spot image. To minimize waiting time, we have uploaded the processed histological image representation data to the following Google Drive link: <https://drive.google.com/file/d/1eu9LlvQ3ePkCEpCH-myc09QnfRSgTi5j/view?usp=sharing>.
+All datasets are publicly available. For convenience, please download the input data before running the model through <https://drive.google.com/file/d/1eu9LlvQ3ePkCEpCH-myc09QnfRSgTi5j/view?usp=sharing>. In our study, we employed the [Vision Transformer (ViT)](https://github.com/google-research/vision_transformer) model to extract the latent representations of each spot image. To minimize waiting time, we have uploaded the processed histological image representation data to the following Google Drive link: <https://drive.google.com/file/d/1eu9LlvQ3ePkCEpCH-myc09QnfRSgTi5j/view?usp=sharing>.
 
 ## Contact
 
