@@ -48,7 +48,7 @@ pip3 install stMMR
 
 All datasets used in this paper are publicly available. Users can download them from the links below.
 
-* **DPLFC**  
+* **DLPFC**  
 The primary source: <https://github.com/LieberInstitute/spatialLIBD>.  
 The processed version: <https://www.nature.com/articles/s41593-020-00787-0>.
 
