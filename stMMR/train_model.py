@@ -76,7 +76,7 @@ def train(adata,knn=10,h=[3000,3000], n_epochs=200,lr=0.0001, key_added='stMMR',
                 idx_max = idx
                 mean_max = mean.to('cpu').detach().numpy()
                 emb_max = z_xi.to('cpu').detach().numpy()
-                print(epoch,ari_res)
+
     if 'ground_truth' in adata.obs.columns:
         print("Ari=", ari_max)
     else:
