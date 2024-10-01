@@ -1,5 +1,5 @@
 # stMMR: accurate and robust spatial domain identification from spatially resolved transcriptomics with multi-modal feature representation
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11231758.svg)](https://zenodo.org/record/11231758)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13866898.svg)](https://doi.org/10.5281/zenodo.13866898)
 
 ## 1 Introduction
 
@@ -97,7 +97,7 @@ adata = sodb.load_experiment('maynard2021trans','151507')
 Then, users can input the SRT data into stMMR.
 
 **Note**:
-It is important to note that if users utilize PySODB to download pre-processed spatial transcriptomic data, they will still need to download the original imaging data from the above links. The data downloaded via PySODB command-line interface consists of compressed images. However, we recommend utilizing the original imaging data for optimal results.To facilitate the reproducibility of stMMR results, we have compiled all datasets utilized in this paper and uploaded them to [Zenodo](https://doi.org/10.5281/zenodo.11231758) and [Google Cloud](https://drive.google.com/file/d/1eu9LlvQ3ePkCEpCH-myc09QnfRSgTi5j/view?usp=sharing). In addition, we employed the [Vision Transformer (ViT)](https://github.com/google-research/vision_transformer) model to extract the latent representations of each spot image. To facilitate user convenience, the processed histological image representation are also provided through [Zenodo](https://doi.org/10.5281/zenodo.11231758) and [Google Cloud](https://drive.google.com/file/d/1eu9LlvQ3ePkCEpCH-myc09QnfRSgTi5j/view?usp=sharing).
+It is important to note that if users utilize PySODB to download pre-processed spatial transcriptomic data, they will still need to download the original imaging data from the above links. The data downloaded via PySODB command-line interface consists of compressed images. However, we recommend utilizing the original imaging data for optimal results.To facilitate the reproducibility of stMMR results, we have compiled all datasets utilized in this paper and uploaded them to [Zenodo](https://doi.org/10.5281/zenodo.11231758) and [Google Cloud](https://drive.google.com/file/d/1eu9LlvQ3ePkCEpCH-myc09QnfRSgTi5j/view?usp=sharing). In addition, we employed the [Vision Transformer (ViT)](https://github.com/google-research/vision_transformer) model to extract the latent representations of each spot image. To facilitate user convenience, the processed histological image representation are also provided through [Zenodo](https://doi.org/10.5281/zenodo.13866898) and [Google Cloud](https://drive.google.com/file/d/17FKJx5oeXDEj1ptM0vkj-oAzeEJ8fzjL/view?usp=sharing).
 
 
 ## 4 Parameters and Tutorial
