@@ -69,7 +69,7 @@ The primary source: <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM30369
 * **Mouse anterior brain**  
 The primary source: <https://www.10xgenomics.com/resources/datasets/mouse-brain-serial-section-1-sagittal-anterior-1-standard-1-1-0>.
 
-* **Human colorectal cancer Visium HD **  
+* **Human colorectal cancer Visium HD**  
 The primary source: <https://www.10xgenomics.com/products/visium-hd-spatial-gene-expression/dataset-human-crc>.
 
 Processed datasets are also available at SODB and can be loaded by PySODB. Here, we use DLPFC dataset as an example.
