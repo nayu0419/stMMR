@@ -23,9 +23,12 @@ def pairwise_distance(X):
     return adj
 
 def calculate_adj_matrix(adata):
-    x = adata.obs["array_row"]
-    y = adata.obs["array_col"]
-    X=np.array([x, y]).T.astype(np.float32)
+    if "array_row" in adata.obs.columns and "array_col" in adata.obs.columns:
+        x = adata.obs["array_row"]
+        y = adata.obs["array_col"]
+        X=np.array([x, y]).T.astype(np.float32)
+    else:
+        X=adata.obsm['spatial'].astype(np.float32)
     adj = pairwise_distance(X)
     return adj
 

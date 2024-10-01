@@ -106,6 +106,27 @@ class MGCN(nn.Module):
         emb2 = self.GCNA2_3(emb2, a)
         return emb1, emb2
 
+# class MGCN(nn.Module):
+#     def __init__(self, nfeatX, nfeatI, hidden_dims):
+#         super(MGCN, self).__init__()
+#         self.GCNA1_1 = nn.Linear(nfeatX, hidden_dims[0])
+#         # self.GCNA1_2 = GraphConvolution(hidden_dims[0], hidden_dims[0])
+#         self.GCNA1_3 = nn.Linear(hidden_dims[0], hidden_dims[1])
+#         # self.GCNA1_3 = GraphConvolution(hidden_dims, hidden_dims)
+#         self.GCNA2_1 = nn.Linear(nfeatI, hidden_dims[0])
+#         # self.GCNA2_2 = GraphConvolution(hidden_dims[0], hidden_dims[0])
+#         self.GCNA2_3 = nn.Linear(hidden_dims[0], hidden_dims[1])
+#         # self.GCNA2_3 = GraphConvolution(hidden_dims, hidden_dims)
+#
+#     def forward(self, x, i, a):
+#         emb1 = self.GCNA1_1(x)
+#         # emb1 = self.GCNA1_2(emb1, a)
+#         emb1 = self.GCNA1_3(emb1)
+#         emb2 = self.GCNA2_1(i)
+#         # emb2 = self.GCNA2_2(emb2, a)
+#         emb2 = self.GCNA2_3(emb2)
+#         return emb1, emb2
+
 class decoder(torch.nn.Module):
     def __init__(self, nhid1, nfeat):
         super(decoder, self).__init__()
